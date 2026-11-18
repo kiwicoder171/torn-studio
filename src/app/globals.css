@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --bg-parchment: #faf7f2;
+  --bg-bone: #f3efea;
+  --ink-charcoal: #2c2825;
+  --ink-obsidian: #191716;
+  --accent-gold: #c5a059;
+  --border-soft: #e5dfd5;
+  --ink-muted: #7d756d;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-parchment);
+    color: var(--ink-charcoal);
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-parchment);
+    color: var(--ink-charcoal);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif-display {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+
+  code,
+  pre,
+  .font-mono-code {
+    font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  }
+}

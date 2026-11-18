@@ -48,7 +48,7 @@ export const SERVICE_TIERS: ServiceTier[] = [
       "Entry tier (20–40 Xanax): slash commands & webhook alerts (no DB)",
       "Advanced tier (60–150 Xanax): persistent DB, RW/Chain/OC 2.0/Market watchers",
       "Per-key sliding-window rate limiter (safe with TornPDA)",
-      "Systemd / Docker deployment guide (+optional 24/7 VPS hosting)",
+      "Systemd / Docker setup guide + guided walkthrough on your own VPS or device",
     ],
   },
   {
@@ -79,7 +79,7 @@ export const SERVICE_TIERS: ServiceTier[] = [
       "Torn API auth / encrypted key vault & role-based user access",
       "Custom workflows: priceboards, contract/order trackers, or faction ops",
       "Firestore / PostgreSQL persistence with real-time multi-device sync",
-      "Vercel / cloud deployment + full source ownership",
+      "Guided deployment to your own Vercel account + full source ownership",
     ],
   },
 ];
@@ -169,8 +169,8 @@ export const COMPLIANCE_RULES = [
       "Every bot and poller ships with sliding-window rate limiting so your API key stays safe alongside TornPDA and browser userscripts.",
   },
   {
-    title: "Transparent Xanax & Exclusivity Terms",
+    title: "Self-Hosted & Full Ownership",
     detail:
-      "50% Xanax deposit on scope lock, 50% on verified live demo and source delivery. Private/exclusive builds and 24/7 managed hosting are quoted upfront.",
+      "50% Xanax deposit on scope lock, 50% on verified demo and source delivery. You host bots on your own VPS/device and web apps on your own Vercel account — guided setup included.",
   },
 ];

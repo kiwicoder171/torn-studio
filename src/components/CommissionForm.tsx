@@ -9,7 +9,7 @@ export function CommissionForm() {
   const [tornName, setTornName] = useState("");
   const [tornId, setTornId] = useState("");
   const [discord, setDiscord] = useState("");
-  const [hosting, setHosting] = useState("self-host");
+  const [hosting, setHosting] = useState("client-vps");
   const [brief, setBrief] = useState("");
   const [website, setWebsite] = useState(""); // honeypot
   const [submitting, setSubmitting] = useState(false);
@@ -138,8 +138,8 @@ export function CommissionForm() {
             onChange={(e) => setHosting(e.target.value)}
             className="w-full rounded-lg border border-[#E5DFD5] bg-white px-3.5 py-2.5 text-sm text-[#191716] outline-none transition focus:border-[#C5A059]"
           >
-            <option value="self-host">Source Code + Setup Guide (Self-Host)</option>
-            <option value="managed-vps">24/7 Managed Hosting Setup (+Xanax)</option>
+            <option value="client-vps">Your Own VPS / Local Device (Guided Setup)</option>
+            <option value="client-vercel">Your Own Vercel Account (Guided Deploy)</option>
             <option value="userscript">Browser Userscript / TornPDA Install</option>
           </select>
         </div>
